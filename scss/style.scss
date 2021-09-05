@@ -1,0 +1,100 @@
+$primary:#3292a6;
+$primary-overlay:rgba(15,146,156,0.7);
+body{
+    margin-top: 90px;
+}
+button:focus {
+    outline: none;
+}
+.navbar{
+    box-shadow: 2px 2px 5px $primary;
+    background: #fff;
+    opacity: .8;
+    
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 10px;
+        
+        &:last-child{
+            padding-right: 0px;
+        }
+        .nav-link{
+            color: #252525;
+            transition: .5s;
+            &:hover{
+                color: $primary;
+            }
+        }     
+    } 
+}
+#showcase{
+    background: url('../img/mountains.jpg') no-repeat center top;
+    background-attachment: fixed;
+    min-height: 600px;
+    position: relative;
+    .primary-overlay{
+        background: $primary-overlay;
+        min-height: 600px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%; 
+    }
+}
+#subscribe-section{
+    background: #252525;
+}
+#box-section{
+    background: #FFFFFF;
+}
+#authors-section{
+    background: #FFFFFF;
+    img{
+        margin-top: -70px;
+        border: 2px solid $primary;
+    }
+    .fa{
+        font-size: 25px;
+    }
+    .card{
+        transition: .5s;
+        &:hover{
+            background: $primary;
+            color: #fff;
+            .fa{
+                color: #fff;
+            }
+        }
+    }
+}
+
+#accordion{
+    .card{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+@media(max-width:576px){
+    .display-3{
+        font-size: 4rem;
+    }
+    #showcase{
+        h1{
+            font-size: 4rem;
+        }
+    }
+    #footer-section{
+        .lead{
+            font-size: 1rem;
+        }
+    }
+}
+@media(max-width:327px){
+    #showcase{
+        h1{
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+body {
+  margin-top: 90px; }
+
+button:focus {
+  outline: none; }
+
+.navbar {
+  box-shadow: 2px 2px 5px #3292a6;
+  background: #fff;
+  opacity: .8; }
+  .navbar .nav-item {
+    font-size: 1.4rem;
+    padding-right: 10px; }
+    .navbar .nav-item:last-child {
+      padding-right: 0px; }
+    .navbar .nav-item .nav-link {
+      color: #252525;
+      transition: .5s; }
+      .navbar .nav-item .nav-link:hover {
+        color: #3292a6; }
+
+#showcase {
+  background: url("../img/mountains.jpg") no-repeat center top;
+  background-attachment: fixed;
+  min-height: 600px;
+  position: relative; }
+  #showcase .primary-overlay {
+    background: rgba(15, 146, 156, 0.7);
+    min-height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; }
+
+#subscribe-section {
+  background: #252525; }
+
+#box-section {
+  background: #FFFFFF; }
+
+#authors-section {
+  background: #FFFFFF; }
+  #authors-section img {
+    margin-top: -70px;
+    border: 2px solid #3292a6; }
+  #authors-section .fa {
+    font-size: 25px; }
+  #authors-section .card {
+    transition: .5s; }
+    #authors-section .card:hover {
+      background: #3292a6;
+      color: #fff; }
+      #authors-section .card:hover .fa {
+        color: #fff; }
+
+#accordion .card:hover {
+  cursor: pointer; }
+
+@media (max-width: 576px) {
+  .display-3 {
+    font-size: 4rem; }
+  #showcase h1 {
+    font-size: 4rem; }
+  #footer-section .lead {
+    font-size: 1rem; } }
+
+@media (max-width: 327px) {
+  #showcase h1 {
+    font-size: 3rem; } }
